@@ -48,7 +48,8 @@ class ConductorController extends Controller
      */
     public function show($id)
     {
-        //
+        $conductor = Conductor::find($id);
+        return response()->json($conductor, 200);
     }
 
     /**
